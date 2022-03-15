@@ -2,40 +2,39 @@ const DemoData = {
     resources: [
         {
             id: 'r0',
-            name: 'Resource0',
+            name: '피트니스',
             groupOnly: true,
         },
         {
             id: 'r1',
-            name: 'Resource1',
+            name: '홍길동',
             parentId: 'r0',
         },
         {
             id: 'r2',
-            name: 'Resource2',
-            parentId: 'r3',
+            name: '아무개',
+            parentId: 'r0',
         },
         {
             id: 'r3',
-            name: 'Resource3',
-            parentId: 'r1',
+            name: '필라테스',
         },
         {
             id: 'r4',
-            name: 'Resource4',
+            name: '조규현',
+            parentId: 'r3',
         },
         {
             id: 'r5',
-            name: 'Resource5',
+            name: '안재현',
+            parentId: 'r3',
         },
         {
             id: 'r6',
-            name: 'Resource6',
+            name: '오재현',
+            parentId: 'r3',
         },
-        {
-            id: 'r7',
-            name: 'Resource7Resource7Resource7Resource7Resource7',
-        }
+   
     ],
     events: [
         {
@@ -43,12 +42,20 @@ const DemoData = {
             start: '2017-12-18 09:30:00',
             end: '2017-12-19 23:30:00',
             resourceId: 'r1',
-            title: 'I am finished',
+            title: '홍길동 레슨',
             bgColor: '#D9D9D9',
             showPopover: false
         },
         {
             id: 2,
+            start: '2017-12-18 12:30:00',
+            end: '2017-12-26 23:30:00',
+            resourceId: 'r2',
+            title: 'I am not resizable',
+            resizable: false
+        },
+        {
+            id: 10,
             start: '2017-12-18 12:30:00',
             end: '2017-12-26 23:30:00',
             resourceId: 'r2',
@@ -276,7 +283,7 @@ const DemoData = {
             resourceId: 'r1',
             title: 'I am finished',
             bgColor: '#D9D9D9',
-            type: 1
+            type: 2
         },
         {
             id: 2,
